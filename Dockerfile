@@ -22,9 +22,8 @@ COPY pnpm-lock.yaml pnpm-lock.yaml
 
 RUN pnpm i
 
-COPY src-tauri/Cargo.toml src-tauri/Cargo.toml
-COPY src-tauri/Cargo.lock src-tauri/Cargo.lock
-
 COPY . .
+
+RUN pnpm tauri info
 
 RUN pnpm tauri build --target x86_64-pc-windows-msvc
