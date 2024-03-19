@@ -1,0 +1,43 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* for window dragging */
+.titlebar {
+  user-select: none;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  border: 2px #2196F3 solid;
+}
+
+* {
+  user-select: none;
+}
+
+html.dark {
+  background: #121212;
+}
+
+.v-toolbar__extension {
+  background-color: #42A5F5;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono', sans-serif;
+  src: url('../assets/JetBrainsMono[wght].ttf');
+}
